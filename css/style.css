@@ -115,16 +115,41 @@ body {
   --card-bg-color: rgba(31, 31, 35, 0.935);
   --group-bg-text-color: hsla(342, 90%, 23%, 0.918);
   --shadow-colors: 4px 4px 12px hsla(344, 9%, 32%, 0.918);
-  --bg: url(../assets/bg/bg-new-3.svg);
+  /* --bg: url(../assets/bg/bg-new-3.svg); */
 }
 
 body {
-  background-color: #6F0626;
-  background-image: var(--bg);
+  /* background-color: #6F0626; */
+  /* background-image: var(--bg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  background-attachment: fixed;
+  background-attachment: fixed; */
+}
+
+.gradient {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(50deg, #590A27, #730D32, #ac2626, #730D32, #BF9075);
+  background-size: 300% 100%;
+  animation: colors 10s ease infinite;
+}
+
+@keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 50% 100%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 ul {
@@ -411,10 +436,10 @@ header {
 /* FOOTER */
 
 footer {
-  color: rgb(174, 173, 173);
+  color: black;
   font-size: 0.8rem;
-  background-color: var(--footer-bg);
-  margin: 0 auto;
+  background-color: #590A27;
+   margin: 0 auto;
   text-align: center;
   padding: 12px 0;
   position: fixed;
@@ -451,20 +476,20 @@ footer a {
 
 @media (min-width: 200px) {
   body {
-    background-image: url(../assets/bg/bg-new-0.svg);
+    /* background-image: url(../assets/bg/bg-new-0.svg); */
   }
 }
 
 @media (min-width: 500px) {
   body {
-    background-image: url(../assets/bg/bg-new-1.svg);
+    /* background-image: url(../assets/bg/bg-new-1.svg); */
   }
 }
 
 
 @media (min-width: 700px) {
   body {
-    background-image: url(../assets/bg/bg-new-2.svg);
+    /* background-image: url(../assets/bg/bg-new-2.svg); */
   }
 
   #cards,
@@ -488,6 +513,6 @@ footer a {
 
 @media (min-width: 950px) {
   body {
-    background-image: url(../assets/bg/bg-new-3.svg);
+    /* background-image: url(../assets/bg/bg-new-3.svg); */
   }
 }
