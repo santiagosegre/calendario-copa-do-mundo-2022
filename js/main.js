@@ -1,8 +1,7 @@
-
-function createMenu(icon, menu) {
+function createMenu(icon, menu, page) {
   return `
 <ul>
-  <a href="./pages/groups.html">
+  <a href="${page}.html">
     <li>
       <i class="${icon}"></i>
       <h3>${menu}</h3>
@@ -15,11 +14,13 @@ function createMenu(icon, menu) {
 document.querySelector("#menu-options").innerHTML = 
 createMenu(
   "ri-table-line",
-  "Grupos"
+  "Grupos",
+  "grupos"
 ) +
 createMenu(
   "ri-calendar-event-line",
-  "Calendário"
+  "Calendário",
+  "calendario"
 )
 
 let delay = -0.5
@@ -27,9 +28,9 @@ function createTeam(team, nameTeam) {
   delay = delay + 0.2
   return `
 <ul >
-    <a href="./pages/${team}.html">
+    <a href="../pages/${team}.html">
     <li class="teams" style="animation-delay: ${delay}s">
-      <img src="assets/teams/icon-${team}.svg" alt="">
+      <img src="../assets/teams/icon-${team}.svg" alt="">
       <p>
         ${nameTeam}
       </p>

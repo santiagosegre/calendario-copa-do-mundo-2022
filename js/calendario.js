@@ -1,3 +1,20 @@
+function createMenu(icon, menu, page) {
+  return `
+<ul>
+  <a href="${page}.html">
+    <li>
+      <i class="${icon}"></i>
+      <h3>${menu}</h3>
+    </li>
+  </a>
+</ul>
+`
+}
+
+document.querySelector("#menu-options").innerHTML =
+  createMenu("ri-home-5-line", "Início", "index") +
+  createMenu("ri-table-line", "Grupos", "grupos")
+
 function createGame(player1, hour, player2) {
   return `
 <li>

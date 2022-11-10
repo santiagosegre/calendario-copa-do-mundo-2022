@@ -153,7 +153,6 @@ a {
 
 /* APP - CENTRALIZADO 100% DE ALTURA */
 #app {
-  width: 500px;
   margin: auto;
   padding-bottom: 50px;
 }
@@ -260,14 +259,18 @@ header {
 
 #groups {
   display: flex;
+  align-items: center;
   flex-direction: column;
   padding-bottom: 32px;
   gap: 32px;
 }
 
 .group {
+  width: 316px;
   padding: 32px 23px;
   text-align: center;
+  width: 300px;
+  align-items: stretch;
   background-color: var(--group-bg-color);
   border-radius: 24px;
   box-shadow: var(--shadow-colors);
@@ -353,6 +356,11 @@ header {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  align-items: stretch;
   padding: 32px 23px;
   text-align: center;
   background-color: var(--card-bg-color);
@@ -361,8 +369,8 @@ header {
 }
 
 .card img {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
 }
 
 .card h2 {
@@ -382,14 +390,13 @@ header {
 .card h2 span {
   color: var(--card-text-color);
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .card ul {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  width: 270px;
 }
 
 .card ul li {
@@ -404,8 +411,8 @@ header {
 }
 
 .card ul li strong {
-  font-weight: 900;
-  font-size: 32px;
+  font-weight: 100;
+  font-size: 24px;
   line-height: 125%;
   color: #E1E1E6;
 }
@@ -481,6 +488,7 @@ footer a {
 
 @media (min-width: 700px) {
 
+
   #menu-options {
     flex-direction: row;
     align-items: center;
@@ -493,20 +501,25 @@ footer a {
   }
 
   #menu-teams {
+    max-width: 1200px;
+    padding: 0 40px 50px 40px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 24px;
   }
 
   #menu-teams li {
     margin-bottom: 0px;
-    width: 200px;
+    width: 220px;
   }
+
+  .card,
+  .group {}
 
   #cards,
   #cards-qatar {
-    /* max-width: 670px; */
+    max-width: 1400px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -515,7 +528,7 @@ footer a {
 
   #groups,
   #group-a {
-    /* max-width: 670px; */
+    max-width: 1400px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
