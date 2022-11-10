@@ -1,3 +1,4 @@
+// CRIAR MENU DE OPÇÕES
 function createMenu(icon, menu, page) {
   return `
 <ul>
@@ -12,23 +13,14 @@ function createMenu(icon, menu, page) {
 }
 
 document.querySelector("#menu-options").innerHTML =
-  createMenu(
-    "ri-home-5-line", 
-    "Início", 
-    "../index") +
-  createMenu(
-    "ri-table-line", 
-    "Grupos", 
-    "grupos") +
-  createMenu(
-    "ri-calendar-event-line", 
-    "Calendário", 
-    "calendario")
+  createMenu("ri-home-5-line", "Início", "../index") +
+  createMenu("ri-table-line", "Grupos", "grupos") +
+  createMenu("ri-calendar-event-line", "Calendário", "calendario")
 
-    //
-    
-    function createGame(player1, hour, player2) {
-      return `
+// CRIAR JOGO
+
+function createGame(player1, hour, player2) {
+  return `
   <li data-aos="zoom-in">
     <a href="${player1}.html"><img src="../assets/teams/icon-${player1}.svg" alt="flag ${player1}"> </a>
     <strong>${hour}</strong>
@@ -37,6 +29,7 @@ document.querySelector("#menu-options").innerHTML =
   `
 }
 
+// CRIAR CARD DE DATA
 function createCard(date, day, games) {
   return `
     <div class="card" data-aos="fade-up">
@@ -46,67 +39,81 @@ function createCard(date, day, games) {
       </ul>
     </div>
     `
-  }
+}
   
-  //jogos da holanda
+  //jogos do senegal
   document.querySelector("#cards-senegal").innerHTML =
-    createCard(
-      "21/11",
-      "domingo",
-      createGame("senegal", "17:00", "netherlands")
-    ) +
+    createCard("21/11", "segunda", createGame("senegal", "17:00", "netherlands")) +
     createCard("25/11", "sexta", createGame("qatar", "14:00", "senegal")) +
     createCard("29/11", "terça", createGame("ecuador", "16:00", "senegal"))
   //
   
-function createGroup(group, player1, player2, player3, player4) {
+// CRIAR GRUPO
+function createGroup(
+  group,
+  player1,
+  namePlayer1,
+  player2,
+  namePlayer2,
+  player3,
+  namePlayer3,
+  player4,
+  namePlayer4
+) {
   return `
-    <div class="group" data-aos="fade-up">
-        <h2 data-aos="zoom-in">${group}</h2>
-        <ul>
-  
-      <a href="${player1}.html">
-        <li>
-          <img src="../assets/teams/icon-${player1}.svg" alt="flag ${player1}">
-          <span>
-              ${player1}
-          </span>
+  <div class="group" data-aos="fade-up">
+      <h2 data-aos="zoom-in">${group}</h2>
+      <ul>
+        <a href="${player1}.html">
+          <li>
+            <img src="../assets/teams/icon-${player1}.svg" alt="flag ${player1}">
+            <span>
+                ${namePlayer1}
+            </span>
           </li>
-      </a>
-      <a href="${player2}.html">
-        <li>
-          <img src="../assets/teams/icon-${player2}.svg" alt="flag ${player2}">
-          <span>
-              ${player2}
-          </span>
+        </a>
+      
+        <a href="${player2}.html">
+          <li>
+            <img src="../assets/teams/icon-${player2}.svg" alt="flag ${player2}">
+            <span>
+                ${namePlayer2}
+            </span>
           </li>
-      </a>
-      <a href="${player3}.html">
-        <li>
-          <img src="../assets/teams/icon-${player3}.svg" alt="flag ${player3}">
-          <span>
-              ${player3}
-          </span>
+        </a>
+        
+        <a href="${player3}.html">
+          <li>
+            <img src="../assets/teams/icon-${player3}.svg" alt="flag ${player3}">
+            <span>
+                ${namePlayer3}
+            </span>
           </li>
-      </a>
-      <a href="${player4}.html">
-        <li>
-          <img src="../assets/teams/icon-${player4}.svg" alt="flag ${player4}">
-          <span>
-              ${player4}
-          </span>
+        </a>
+      
+        <a href="${player4}.html">
+          <li>
+            <img src="../assets/teams/icon-${player4}.svg" alt="flag ${player4}">
+            <span>
+                ${namePlayer4}
+            </span>
           </li>
-      </a>
-        </ul>
-    </div>
-    `
-  }
-  
-  // GRUPO A
-  document.querySelector("#group-a").innerHTML = createGroup(
-    "Grupo a",
-    "qatar",
-    "ecuador",
-    "senegal",
-    "netherlands"
-  )
+        </a>
+      </ul>
+  </div>
+  `
+}
+
+// GRUPO A
+document.querySelector("#group-a").innerHTML = createGroup(
+  "Grupo a",
+  "qatar",
+  "Qatar",
+  "ecuador",
+  "Equador",
+  "senegal",
+  "Senegal",
+  "netherlands",
+  "Holanda"
+)
+//

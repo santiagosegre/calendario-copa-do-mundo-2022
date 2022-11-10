@@ -13,20 +13,12 @@ function createMenu(icon, menu, page) {
 }
 
 document.querySelector("#menu-options").innerHTML =
-  createMenu(
-    "ri-home-5-line", 
-    "Início", 
-    "../index") +
-  createMenu(
-    "ri-table-line", 
-    "Grupos", 
-    "grupos") +
-  createMenu(
-    "ri-calendar-event-line", 
-    "Calendário", 
-    "calendario")
+  createMenu("ri-home-5-line", "Início", "../index") +
+  createMenu("ri-table-line", "Grupos", "grupos") +
+  createMenu("ri-calendar-event-line", "Calendário", "calendario")
 
 // CRIAR JOGO
+
 function createGame(player1, hour, player2) {
   return `
   <li data-aos="zoom-in">
@@ -36,7 +28,7 @@ function createGame(player1, hour, player2) {
   </li>  
   `
 }
-
+  
 // CRIAR CARD DE DATA
 function createCard(date, day, games) {
   return `
@@ -48,13 +40,14 @@ function createCard(date, day, games) {
     </div>
     `
 }
-
-//JOGOS DO QATAR
-document.querySelector("#cards-qatar").innerHTML =
-  createCard("20/11", "domingo", createGame("qatar", "17:00", "ecuador")) +
-  createCard("25/11", "sexta", createGame("qatar", "14:00", "senegal")) +
-  createCard("29/11", "terça", createGame("netherlands", "16:00", "qatar"))
+  
+  // jogos do irã
+document.querySelector("#cards-iran").innerHTML =
+  createCard("21/11", "segunda", createGame("england", "14:00", "iran")) +
+  createCard("25/11", "sexta", createGame("wales", "11:00", "iran")) +
+  createCard("29/11", "terça", createGame("iran", "20:00", "united-states"))
 //
+
 
 // CRIAR GRUPO
 function createGroup(
@@ -112,15 +105,17 @@ function createGroup(
   `
 }
 
-// GRUPO A
-document.querySelector("#group-a").innerHTML = createGroup(
-  "Grupo a",
-  "qatar",
-  "Qatar",
-  "ecuador",
-  "Equador",
-  "senegal",
-  "Senegal",
-  "netherlands",
-  "Holanda"
+// GRUPO B
+document.querySelector("#group-b").innerHTML = createGroup(
+  "Grupo b",
+  "england",
+  "Inglaterra",
+  "iran",
+  "Irã",
+  "united-states",
+  "Estados unidos",
+  "wales",
+  "País de Gales"
 )
+//
+
