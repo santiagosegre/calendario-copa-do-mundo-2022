@@ -1,7 +1,7 @@
 function createMenu(icon, menu, page) {
   return `
 <ul>
-  <a href="/pages/${page}.html">
+  <a href="pages/${page}.html">
     <li data-aos="fade-down">
       <i class="${icon}"></i>
       <h3>${menu}</h3>
@@ -27,7 +27,7 @@ function createTeam(team, nameTeam) {
   return `
 <ul >
     <div class="bg-teams">
-      <a href="../pages/${team}.html">
+      <a href="pages/${team}.html">
       <li class="teams" data-aos="fade-left">
         <img src="../assets/teams/icon-${team}.svg" alt="">
         <p>
