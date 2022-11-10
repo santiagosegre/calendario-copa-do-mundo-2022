@@ -258,7 +258,6 @@ header {
 }
 
 .group {
-  width: 316px;
   padding: 32px 23px;
   text-align: center;
   width: 300px;
@@ -410,7 +409,7 @@ header {
 
 .footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -449,19 +448,25 @@ header {
   gap: 32px;
 }
 
-#cards-qatar {
+#cards-qatar,
+#cards-ecuador,
+#cards-senegal,
+#cards-netherlands {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 
 
-
-
 /* MEDIA */
 
-@media (min-width: 700px) {
+@media (min-width: 500px) {
+  .footer {
+    flex-direction: row;
+  }
+}
 
+@media (min-width: 700px) {
 
   #menu-options {
     flex-direction: row;
@@ -488,11 +493,11 @@ header {
     width: 220px;
   }
 
-  .card,
-  .group {}
-
   #cards,
-  #cards-qatar {
+  #cards-qatar,
+  #cards-netherlands,
+  #cards-senegal,
+  #cards-ecuador {
     max-width: 1400px;
     flex-direction: row;
     flex-wrap: wrap;

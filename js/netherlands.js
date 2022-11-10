@@ -12,18 +12,9 @@ function createMenu(icon, menu, page) {
 }
 
 document.querySelector("#menu-options").innerHTML =
-  createMenu(
-    "ri-home-5-line", 
-    "Início", 
-    "../index") +
-  createMenu(
-    "ri-table-line", 
-    "Grupos", 
-    "grupos") +
-  createMenu(
-    "ri-calendar-event-line", 
-    "Calendário", 
-    "calendario")
+  createMenu("ri-home-5-line", "Início", "../index") +
+  createMenu("ri-table-line", "Grupos", "grupos") +
+  createMenu("ri-calendar-event-line", "Calendário", "calendario")
 
 function createGroup(group, player1, player2, player3, player4) {
   return `
@@ -100,7 +91,7 @@ function createCard(date, day, games) {
 }
 
 //JOGOS DO QATAR
-document.querySelector("#cards-qatar").innerHTML =
+document.querySelector("#cards-netherlands").innerHTML =
   createCard("20/11", "domingo", createGame("qatar", "17:00", "ecuador")) +
   createCard("25/11", "sexta", createGame("qatar", "14:00", "senegal")) +
   createCard("29/11", "terça", createGame("netherlands", "16:00", "qatar"))

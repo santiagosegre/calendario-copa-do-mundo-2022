@@ -44,35 +44,35 @@ function createTeam(team, nameTeam) {
 // nameTeam: Como vai aparecer o nome da Seleção no <p>
 
 document.querySelector("#menu-teams").innerHTML =
-  createTeam("qatar", "Qatar") +
-  createTeam("ecuador", "Equador") +
-  createTeam("senegal", "Senegal") +
-  createTeam("netherlands", "Holanda") +
-  createTeam("england", "Inglaterra") +
-  createTeam("iran", "Irã") +
-  createTeam("united-states", "Estados unidos") +
-  createTeam("wales", "País de Gales") +
-  createTeam("argentina", "Argentina") +
-  createTeam("saudi-arabia", "Arábia Saudita") +
-  createTeam("mexico", "México") +
-  createTeam("poland", "Polônia") +
-  createTeam("france", "França") +
-  createTeam("denmark", "Dinamarca") +
-  createTeam("tunisia", "Tunísia") +
-  createTeam("australia", "Austrália") +
-  createTeam("spain", "Espanha") +
-  createTeam("germany", "Alemanha") +
-  createTeam("japan", "Japão") +
-  createTeam("costa-rica", "Costa Rica") +
-  createTeam("belgium", "Bélgica") +
-  createTeam("canada", "Canadá") +
-  createTeam("morocco", "Marrocos") +
-  createTeam("croatia", "Croácia") +
-  createTeam("brazil", "Brasil") +
-  createTeam("serbia", "Sérvia") +
+createTeam("germany", "Alemanha") +
+createTeam("saudi-arabia", "Arábia Saudita") +
+createTeam("argentina", "Argentina") +
+createTeam("australia", "Austrália") +
+createTeam("belgium", "Bélgica") +
+createTeam("brazil", "Brasil") +
+createTeam("cameroon", "Camarões") +
+createTeam("canada", "Canadá") +
+createTeam("south-korea", "Coreia do Sul") +
+createTeam("costa-rica", "Costa Rica") +
+createTeam("croatia", "Croácia") +
+createTeam("denmark", "Dinamarca") +
+createTeam("ecuador", "Equador") +
+createTeam("spain", "Espanha") +
+createTeam("united-states", "Estados unidos") +
+createTeam("france", "França") +
+createTeam("ghana", "Gana") +
+createTeam("netherlands", "Holanda") +
+createTeam("england", "Inglaterra") +
+createTeam("iran", "Irã") +
+createTeam("japan", "Japão") +
+createTeam("morocco", "Marrocos") +
+createTeam("mexico", "México") +
+createTeam("wales", "País de Gales") +
+createTeam("poland", "Polônia") +
+createTeam("portugal", "Portugal") +
+createTeam("qatar", "Qatar") +
+createTeam("senegal", "Senegal") +
+createTeam("serbia", "Sérvia") +
   createTeam("switzerland", "Suíça") +
-  createTeam("cameroon", "Camarões") +
-  createTeam("portugal", "Portugal") +
-  createTeam("ghana", "Gana") +
-  createTeam("uruguay", "Uruguai") +
-  createTeam("south-korea", "Coreia do Sul")
+  createTeam("tunisia", "Tunísia") +
+  createTeam("uruguay", "Uruguai")
