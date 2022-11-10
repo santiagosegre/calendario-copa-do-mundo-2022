@@ -1,7 +1,7 @@
 let delay = -0.5
 
 function createGroup(group, player1, namePlayer1, player2, namePlayer2, player3, namePlayer3, player4, namePlayer4) {
-  delay = delay + 0.5
+  delay = delay + .5
   return `
   <div class="group" style="animation-delay: ${delay}s">
       <h2>${group}</h2>

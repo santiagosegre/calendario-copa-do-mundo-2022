@@ -153,7 +153,7 @@ a {
 
 /* APP - CENTRALIZADO 100% DE ALTURA */
 #app {
-  width: fit-content;
+  width: 500px;
   margin: auto;
   padding-bottom: 50px;
 }
@@ -168,19 +168,27 @@ header {
 #menu {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
   padding-bottom: 32px;
   gap: 32px;
 }
 
+#menu-options {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 #menu-options li {
   display: flex;
+  flex-direction: row;
+  width: 200px;
   gap: 10px;
   background-color: var(--group-bg-color);
   padding: 10px 14px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   border-radius: 8px;
   align-items: center;
   transition: all .5s;
@@ -194,11 +202,18 @@ header {
   margin-bottom: 12px;
 }
 
+#menu-teams {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 #menu-teams li {
   display: flex;
+  width: 200px;
   gap: 10px;
   background-color: var(--group-bg-color);
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   padding-right: 12px;
   border-radius: 19px;
   align-items: center;
@@ -211,6 +226,7 @@ header {
 }
 
 /* Animações menus */
+
 
 #menu-options li:hover {
   background-color: white;
@@ -413,7 +429,7 @@ header {
 
 @keyframes appear {
   0% {
-    transform: translateY(60px);
+    transform: translateY(-60px);
     opacity: 0;
   }
 
@@ -428,7 +444,7 @@ footer {
   color: black;
   font-size: 0.8rem;
   background-color: #590A27;
-   margin: 0 auto;
+  margin: 0 auto;
   text-align: center;
   padding: 12px 0;
   position: fixed;
@@ -464,6 +480,29 @@ footer a {
 /* MEDIA */
 
 @media (min-width: 700px) {
+
+  #menu-options {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  #menu-options li {
+    width: 200px;
+  }
+
+  #menu-teams {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  #menu-teams li {
+    margin-bottom: 0px;
+    width: 200px;
+  }
 
   #cards,
   #cards-qatar {
