@@ -1,7 +1,7 @@
 function createMenu(icon, menu, page) {
   return `
 <ul>
-  <a href="https://santiagosegre.github.io/calendario-copa-do-mundo-2022/${page}.html">
+  <a href="${page}.html">
     <li data-aos="zoom-in">
       <i class="${icon}"></i>
       <h3>${menu}</h3>
@@ -15,11 +15,11 @@ document.querySelector("#menu-options").innerHTML =
   createMenu(
     "ri-home-5-line",
     "Início", 
-    "index") +
+    "../index") +
   createMenu(
     "ri-calendar-event-line", 
     "Calendário", 
-    "pages/calendario")
+    "calendario")
 
 function createGroup(
   group,
@@ -37,30 +37,41 @@ function createGroup(
   <div class="group" data-aos="fade-up">
       <h2 data-aos="zoom-in">${group}</h2>
       <ul>
-    <li>
-      <img src="../assets/teams/icon-${player1}.svg" alt="flag ${player1}">
-      <span>
-          ${namePlayer1}
-      </span>
-  </li>
-    <li>
-      <img src="../assets/teams/icon-${player2}.svg" alt="flag ${player2}">
-      <span>
-          ${namePlayer2}
-      </span>
-  </li>
-    <li>
-      <img src="../assets/teams/icon-${player3}.svg" alt="flag ${player3}">
-      <span>
-          ${namePlayer3}
-      </span>
-  </li>
-    <li>
-      <img src="../assets/teams/icon-${player4}.svg" alt="flag ${player4}">
-      <span>
-          ${namePlayer4}
-      </span>
-  </li>
+        <a href="${player1}.html">
+          <li>
+            <img src="../assets/teams/icon-${player1}.svg" alt="flag ${player1}">
+            <span>
+                ${namePlayer1}
+            </span>
+          </li>
+        </a>
+      
+        <a href="${player2}.html">
+          <li>
+            <img src="../assets/teams/icon-${player2}.svg" alt="flag ${player2}">
+            <span>
+                ${namePlayer2}
+            </span>
+          </li>
+        </a>
+        
+        <a href="${player3}.html">
+          <li>
+            <img src="../assets/teams/icon-${player3}.svg" alt="flag ${player3}">
+            <span>
+                ${namePlayer3}
+            </span>
+          </li>
+        </a>
+      
+        <a href="${player4}.html">
+          <li>
+            <img src="../assets/teams/icon-${player4}.svg" alt="flag ${player4}">
+            <span>
+                ${namePlayer4}
+            </span>
+          </li>
+        </a>
       </ul>
   </div>
   `
