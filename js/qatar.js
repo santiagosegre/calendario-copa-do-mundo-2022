@@ -2,7 +2,7 @@ function createMenu(icon, menu, page) {
   return `
 <ul>
   <a href="${page}.html">
-    <li>
+    <li data-aos="zoom-in">
       <i class="${icon}"></i>
       <h3>${menu}</h3>
     </li>
@@ -15,13 +15,10 @@ document.querySelector("#menu-options").innerHTML =
   createMenu("ri-home-5-line", "Início", "index") +
   createMenu("ri-calendar-event-line", "Calendário", "calendario")
 
-let delay = -0.5
-
 function createGroup(group, player1, player2, player3, player4) {
-  delay = delay + 0.5
   return `
-  <div class="group" style="animation-delay: ${delay}s">
-      <h2>${group}</h2>
+  <div class="group" data-aos="fade-up">
+      <h2 data-aos="zoom-in">${group}</h2>
       <ul>
     <li>
       <img src="../assets/teams/icon-${player1}.svg" alt="flag ${player1}">
@@ -65,21 +62,20 @@ document.querySelector("#group-a").innerHTML = createGroup(
 function createGame(player1, hour, player2) {
   return `
   <li>
-    <img src="../assets/teams/icon-${player1}.svg" alt="flag ${player1}"> 
+    <img src="../assets/teams/icon-${player1}.svg" alt="flag ${player1}" data-aos="zoom-in"> 
     <strong>${hour}</strong>
-    <img src="../assets/teams/icon-${player2}.svg" alt="flag ${player2}">
+    <img src="../assets/teams/icon-${player2}.svg" alt="flag ${player2}" data-aos="zoom-in">
   </li>  
   `
 }
 
 function createCard(date, day, games) {
-  delay = delay + 0.5
   return `
-      <div class="card" style="animation-delay: ${delay}s">
-        <h2>${date} <span>${day}</span></h2>
-        <ul>
-          ${games}            
-        </ul>
+    <div class="card" data-aos="fade-up">
+      <h2 data-aos="zoom-in">${date} <span>${day}</span></h2>
+      <ul>
+        ${games}            
+      </ul>
     </div>
     `
 }

@@ -2,7 +2,7 @@ function createMenu(icon, menu, page) {
   return `
 <ul>
   <a href="${page}.html">
-    <li>
+    <li data-aos="zoom-in">
       <i class="${icon}"></i>
       <h3>${menu}</h3>
     </li>
@@ -18,23 +18,22 @@ document.querySelector("#menu-options").innerHTML =
 function createGame(player1, hour, player2) {
   return `
 <li>
-  <img src="../assets/teams/icon-${player1}.svg" alt="flag ${player1}"> 
+  <img src="../assets/teams/icon-${player1}.svg" alt="flag ${player1}" data-aos="zoom-in"> 
   <strong>${hour}</strong>
-  <img src="../assets/teams/icon-${player2}.svg" alt="flag ${player2}">
+  <img src="../assets/teams/icon-${player2}.svg" alt="flag ${player2}" data-aos="zoom-in">
 </li>  
 `
 }
 
 function createCard(date, day, games) {
-
   return `
-      <div class="card" data-aos="fade-up">
-        <h2>${date} <span>${day}</span></h2>
-        <ul>
-          ${games}            
-        </ul>
-    </div>
-    `
+  <div class="card" data-aos="fade-up">
+    <h2 data-aos="zoom-in">${date} <span>${day}</span></h2>
+    <ul>
+      ${games}            
+    </ul>
+  </div>
+  `
 }
 
 //CRIAR JOGOS
