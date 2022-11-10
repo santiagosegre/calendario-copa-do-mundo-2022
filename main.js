@@ -29,7 +29,7 @@ function createTeam(team, nameTeam) {
     <div class="bg-teams">
       <a href="pages/${team}.html">
       <li class="teams" data-aos="fade-left">
-        <img src="../assets/teams/icon-${team}.svg" alt="">
+        <img src="assets/teams/icon-${team}.svg" alt="">
         <p>
           ${nameTeam}
         </p>
@@ -75,4 +75,4 @@ document.querySelector("#menu-teams").innerHTML =
   createTeam("portugal", "Portugal") +
   createTeam("ghana", "Gana") +
   createTeam("uruguay", "Uruguai") +
-  createTeam("south-korea", "Korea do Sul")
+  createTeam("south-korea", "Coreia do Sul")
