@@ -1,7 +1,7 @@
 function createMenu(icon, menu, page) {
   return `
 <ul>
-  <a href="${page}.html">
+  <a href="/pages/${page}.html">
     <li data-aos="fade-down">
       <i class="${icon}"></i>
       <h3>${menu}</h3>

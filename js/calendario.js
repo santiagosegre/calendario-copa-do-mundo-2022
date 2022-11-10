@@ -1,7 +1,7 @@
 function createMenu(icon, menu, page) {
   return `
 <ul>
-  <a href="${page}.html">
+  <a href="https://santiagosegre.github.io/calendario-copa-do-mundo-2022/${page}.html">
     <li data-aos="zoom-in">
       <i class="${icon}"></i>
       <h3>${menu}</h3>
@@ -12,8 +12,14 @@ function createMenu(icon, menu, page) {
 }
 
 document.querySelector("#menu-options").innerHTML =
-  createMenu("ri-home-5-line", "Início", "index") +
-  createMenu("ri-table-line", "Grupos", "grupos")
+  createMenu(
+    "ri-home-5-line", 
+    "Início", 
+    "index") +
+  createMenu(
+    "ri-table-line", 
+    "Grupos", 
+    "/pages/grupos")
 
 function createGame(player1, hour, player2) {
   return `
