@@ -460,7 +460,9 @@ header {
 #cards-senegal,
 #cards-netherlands,
 #cards-england,
-#cards-iran {
+#cards-iran,
+#cards-united-states,
+#cards-wales {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -477,6 +479,7 @@ header {
 
 @media (min-width: 700px) {
 
+
   #menu-options {
     flex-direction: row;
     align-items: center;
@@ -488,6 +491,7 @@ header {
     width: 200px;
   }
 
+  
   #menu-teams {
     max-width: 1200px;
     padding: 0 40px 50px 40px;
@@ -502,18 +506,28 @@ header {
     width: 220px;
   }
 
+  #groups {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 32px 32px;
+  }
+
   #cards,
   #cards-qatar,
   #cards-netherlands,
   #cards-senegal,
   #cards-ecuador,
   #cards-england,
-  #cards-iran {
+  #cards-iran,
+  #cards-united-states,
+  #cards-wales {
     max-width: 1400px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0 32px;
+    padding: 0 32px 32px;
   }
 
   #group-a,
@@ -524,6 +538,7 @@ header {
   #group-f,
   #group-g,
   #group-h {
+    margin-top: 0;
     max-width: 1400px;
     flex-direction: row;
     flex-wrap: wrap;
