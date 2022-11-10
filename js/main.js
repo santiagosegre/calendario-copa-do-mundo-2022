@@ -23,19 +23,19 @@ createMenu(
   "calendario"
 )
 
-let delay = -0.5
 function createTeam(team, nameTeam) {
-  delay = delay + 0.2
   return `
 <ul >
-    <a href="../pages/${team}.html">
-    <li class="teams" style="animation-delay: ${delay}s">
-      <img src="../assets/teams/icon-${team}.svg" alt="">
-      <p>
-        ${nameTeam}
-      </p>
-     </li>
-    </a>
+    <div class="bg-teams">
+      <a href="../pages/${team}.html">
+      <li class="teams" data-aos="fade-left">
+        <img src="../assets/teams/icon-${team}.svg" alt="">
+        <p>
+          ${nameTeam}
+        </p>
+       </li>
+      </a>
+    </div>
 </ul>
 `
 }

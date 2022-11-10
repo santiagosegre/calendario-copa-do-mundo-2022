@@ -8,8 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../css/style.css">
 </head >
     <body id="body" class="gradient">
@@ -31,11 +32,19 @@
                 </div>
             </main>
         </div>
-        <footer>
-            <p>
+        <footer class="footer">
+            <div>
                 Criado por <a href="https://github.com/santiagosegre" target="_blank">Santiago Segre</a>
-            </p>
+            </div>
+            <div>Informações oficiais <a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022">FIFA Qatar 2022</a></div>
         </footer>
         <script src="../js/main.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            once: true,
+            duration: 2000,
+          });
+        </script>
     </body>
 </html>

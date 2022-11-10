@@ -15,8 +15,6 @@ document.querySelector("#menu-options").innerHTML =
   createMenu("ri-home-5-line", "Início", "index") +
   createMenu("ri-calendar-event-line", "Calendário", "calendario")
 
-let delay = -0.5
-
 function createGroup(
   group,
   player1,
@@ -28,10 +26,10 @@ function createGroup(
   player4,
   namePlayer4
 ) {
-  delay = delay + 0.5
+
   return `
-  <div class="group" style="animation-delay: ${delay}s">
-      <h2>${group}</h2>
+  <div class="group" data-aos="fade-up">
+      <h2 data-aos="zoom-in">${group}</h2>
       <ul>
     <li>
       <img src="../assets/teams/icon-${player1}.svg" alt="flag ${player1}">
