@@ -462,7 +462,15 @@ header {
 #cards-england,
 #cards-iran,
 #cards-united-states,
-#cards-wales {
+#cards-wales,
+#cards-argentina,
+#cards-saudi-arabia,
+#cards-mexico,
+#cards-poland,
+#cards-france,
+#cards-denmark,
+#cards-tunisia,
+#cards-australia {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -491,7 +499,7 @@ header {
     width: 200px;
   }
 
-  
+
   #menu-teams {
     max-width: 1200px;
     padding: 0 40px 50px 40px;
@@ -522,7 +530,15 @@ header {
   #cards-england,
   #cards-iran,
   #cards-united-states,
-  #cards-wales {
+  #cards-wales,
+  #cards-argentina,
+  #cards-saudi-arabia,
+  #cards-mexico,
+  #cards-poland,
+  #cards-france,
+  #cards-denmark,
+  #cards-tunisia,
+  #cards-australia {
     max-width: 1400px;
     flex-direction: row;
     flex-wrap: wrap;
