@@ -23,10 +23,10 @@ document.querySelector("#menu-options").innerHTML =
 
 function createGame(player1, hour, player2) {
   return `
-<li>
-  <img src="../assets/teams/icon-${player1}.svg" alt="flag ${player1}" data-aos="zoom-in"> 
+<li data-aos="zoom-in">
+  <a href="${player1}"><img src="../assets/teams/icon-${player1}.svg" alt="flag ${player1}"> </a>
   <strong>${hour}</strong>
-  <img src="../assets/teams/icon-${player2}.svg" alt="flag ${player2}" data-aos="zoom-in">
+  <a href="${player2}"><img src="../assets/teams/icon-${player2}.svg" alt="flag ${player2}"></a>
 </li>  
 `
 }
