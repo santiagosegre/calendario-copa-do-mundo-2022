@@ -41,11 +41,11 @@ function createCard(date, day, games) {
     `
 }
   
-  // jogos da Dinamarca
-document.querySelector("#cards-denmark").innerHTML =
-  createCard("22/11", "terça", createGame("denmark", "14:00", "tunisia")) +
-  createCard("26/11", "sábado", createGame("france", "17:00", "denmark")) +
-  createCard("30/11", "quarta", createGame("australia", "16:00", "denmark"))
+  // jogos do Marrocos
+document.querySelector("#cards-morocco").innerHTML =
+  createCard("23/11", "quarta", createGame("morocco", "11:00", "croatia")) +
+  createCard("27/11", "domingo", createGame("belgium", "14:00", "morocco")) +
+  createCard("01/12", "quinta", createGame("canada", "16:00", "morocco"))
 //
 
 
@@ -105,17 +105,17 @@ function createGroup(
   `
 }
 
-// GRUPO D
-document.querySelector("#group-d").innerHTML = createGroup(
-  "Grupo d",
-  "france",
-  "França",
-  "denmark",
-  "Dinamarca",
-  "tunisia",
-  "Tunísia",
-  "australia",
-  "Austrália"
+// GRUPO f
+document.querySelector("#group-f").innerHTML = createGroup(
+  "Grupo f",
+  "belgium",
+  "Bélgica",
+  "canada",
+  "Canadá",
+  "morocco",
+  "Marrocos",
+  "croatia",
+  "Croácia"
 )
 //
 

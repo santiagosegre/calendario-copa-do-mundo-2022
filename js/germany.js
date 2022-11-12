@@ -22,9 +22,11 @@ document.querySelector("#menu-options").innerHTML =
 function createGame(player1, hour, player2) {
   return `
   <li data-aos="zoom-in">
-    <a href="${player1}.html"><img src="../assets/teams/icon-${player1}.svg" alt="flag ${player1}"> </a>
+    <a href="${player1}.html">
+    <img src="../assets/teams/icon-${player1}.svg" alt="flag ${player1}"> </a>
     <strong>${hour}</strong>
-    <a href="${player2}.html"><img src="../assets/teams/icon-${player2}.svg" alt="flag ${player2}"></a>
+    <a href="${player2}.html"><img src="../assets/teams/icon-${player2}.svg" alt="flag ${player2}">
+    </a>
   </li>  
   `
 }
@@ -41,11 +43,11 @@ function createCard(date, day, games) {
     `
 }
   
-  // jogos da Dinamarca
-document.querySelector("#cards-denmark").innerHTML =
-  createCard("22/11", "terça", createGame("denmark", "14:00", "tunisia")) +
-  createCard("26/11", "sábado", createGame("france", "17:00", "denmark")) +
-  createCard("30/11", "quarta", createGame("australia", "16:00", "denmark"))
+  // jogos da Alemanha
+document.querySelector("#cards-germany").innerHTML =
+  createCard("23/11", "quarta", createGame("germany", "14:00", "japan")) +
+  createCard("27/11", "domingo", createGame("spain", "20:00", "germany")) +
+  createCard("01/12", "quinta", createGame("costa-rica", "20:00", "germany"))
 //
 
 
@@ -105,17 +107,17 @@ function createGroup(
   `
 }
 
-// GRUPO D
-document.querySelector("#group-d").innerHTML = createGroup(
-  "Grupo d",
-  "france",
-  "França",
-  "denmark",
-  "Dinamarca",
-  "tunisia",
-  "Tunísia",
-  "australia",
-  "Austrália"
+// GRUPO E
+document.querySelector("#group-e").innerHTML = createGroup(
+  "Grupo e",
+  "spain",
+  "Espanha",
+  "germany",
+  "Alemanha",
+  "japan",
+  "Japão",
+  "costa-rica",
+  "Costa Rica"
 )
 //
 

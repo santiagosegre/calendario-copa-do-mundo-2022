@@ -167,5 +167,5 @@ document.querySelector("#groups").innerHTML =
     "uruguay",
     "Uruguai",
     "south-korea",
-    "Korea do Sul"
+    "Coreia do Sul"
   )

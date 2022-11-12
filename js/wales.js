@@ -41,7 +41,7 @@ function createCard(date, day, games) {
     `
 }
   
-  // jogos dos EUA
+  // jogos do País de Gales
 document.querySelector("#cards-wales").innerHTML =
   createCard("21/11", "segunda", createGame("united-states", "20:00", "wales")) +
   createCard("25/11", "sexta", createGame("wales", "11:00", "iran")) +

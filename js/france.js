@@ -105,7 +105,7 @@ function createGroup(
   `
 }
 
-// GRUPO C
+// GRUPO D
 document.querySelector("#group-d").innerHTML = createGroup(
   "Grupo d",
   "france",

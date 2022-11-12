@@ -41,11 +41,11 @@ function createCard(date, day, games) {
     `
 }
   
-  // jogos da Dinamarca
-document.querySelector("#cards-denmark").innerHTML =
-  createCard("22/11", "terça", createGame("denmark", "14:00", "tunisia")) +
-  createCard("26/11", "sábado", createGame("france", "17:00", "denmark")) +
-  createCard("30/11", "quarta", createGame("australia", "16:00", "denmark"))
+  // jogos do Japão
+document.querySelector("#cards-japan").innerHTML =
+  createCard("23/11", "quarta", createGame("germany", "14:00", "japan")) +
+  createCard("27/11", "domingo", createGame("japan", "11:00", "costa-rica")) +
+  createCard("01/12", "quinta", createGame("japan", "20:00", "spain"))
 //
 
 
@@ -105,17 +105,17 @@ function createGroup(
   `
 }
 
-// GRUPO D
-document.querySelector("#group-d").innerHTML = createGroup(
-  "Grupo d",
-  "france",
-  "França",
-  "denmark",
-  "Dinamarca",
-  "tunisia",
-  "Tunísia",
-  "australia",
-  "Austrália"
+// GRUPO E
+document.querySelector("#group-e").innerHTML = createGroup(
+  "Grupo e",
+  "spain",
+  "Espanha",
+  "germany",
+  "Alemanha",
+  "japan",
+  "Japão",
+  "costa-rica",
+  "Costa Rica"
 )
 //
 

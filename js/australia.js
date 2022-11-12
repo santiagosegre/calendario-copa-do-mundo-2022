@@ -41,7 +41,7 @@ function createCard(date, day, games) {
     `
 }
   
-  // jogos da França
+  // jogos da Austrália
 document.querySelector("#cards-australia").innerHTML =
   createCard("22/11", "terça", createGame("france", "20:00", "australia")) +
   createCard("26/11", "sábado", createGame("tunisia", "11:00", "australia")) +
@@ -105,7 +105,7 @@ function createGroup(
   `
 }
 
-// GRUPO C
+// GRUPO D
 document.querySelector("#group-d").innerHTML = createGroup(
   "Grupo d",
   "france",

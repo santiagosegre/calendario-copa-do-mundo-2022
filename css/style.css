@@ -324,10 +324,25 @@ header {
 
 /* CARDS DE JOGOS */
 
+/* .times {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: -15px 0 0 2px;
+  color: white;
+  font-weight: 100;
+  font-size: 12px;
+  text-transform: uppercase;
+} */
+
+
 #cards {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  padding-bottom: 32px;
+
 }
 
 .card {
@@ -413,7 +428,7 @@ header {
   align-items: center;
   text-align: center;
   justify-content: center;
-  gap: 10px;
+  gap: 5px;
   z-index: 1000;
   color: black;
   font-size: 0.8rem;
@@ -470,7 +485,23 @@ header {
 #cards-france,
 #cards-denmark,
 #cards-tunisia,
-#cards-australia {
+#cards-australia,
+#cards-spain,
+#cards-germany,
+#cards-japan,
+#cards-costa-rica,
+#cards-belgium,
+#cards-canada,
+#cards-morocco,
+#cards-croatia,
+#cards-brazil,
+#cards-serbia,
+#cards-switzerland,
+#cards-cameroon,
+#cards-portugal,
+#cards-ghana,
+#cards-uruguay,
+#cards-south-korea {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -479,11 +510,11 @@ header {
 
 /* MEDIA */
 
-@media (min-width: 500px) {
+/* @media (min-width: 500px) {
   .footer {
     flex-direction: row;
   }
-}
+} */
 
 @media (min-width: 700px) {
 
@@ -538,7 +569,23 @@ header {
   #cards-france,
   #cards-denmark,
   #cards-tunisia,
-  #cards-australia {
+  #cards-australia,
+  #cards-spain,
+  #cards-germany,
+  #cards-japan,
+  #cards-costa-rica,
+  #cards-belgium,
+  #cards-canada,
+  #cards-morocco,
+  #cards-croatia,
+  #cards-brazil,
+  #cards-serbia,
+  #cards-switzerland,
+  #cards-cameroon,
+  #cards-portugal,
+  #cards-ghana,
+  #cards-uruguay,
+  #cards-south-korea {
     max-width: 1400px;
     flex-direction: row;
     flex-wrap: wrap;
