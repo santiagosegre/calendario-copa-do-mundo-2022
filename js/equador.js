@@ -40,11 +40,11 @@ function createCard(date, day, games) {
     `
 }
 
-  // jogos do equador
+// jogos do equador
 document.querySelector("#cards-ecuador").innerHTML =
-  createCard("20/11", "domingo", createGame("qatar", "17:00", "ecuador")) +
-  createCard("25/11", "sexta", createGame("netherlands", "17:00", "ecuador")) +
-  createCard("29/11", "terça", createGame("ecuador", "16:00", "senegal"))
+  createCard("20/11", "domingo", createGame("qatar", "13:00", "ecuador")) +
+  createCard("25/11", "sexta", createGame("netherlands", "13:00", "ecuador")) +
+  createCard("29/11", "terça", createGame("ecuador", "12:00", "senegal"))
 //
 
 // CRIAR GRUPO
@@ -116,4 +116,3 @@ document.querySelector("#group-a").innerHTML = createGroup(
   "Holanda"
 )
 //
-

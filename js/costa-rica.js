@@ -28,7 +28,7 @@ function createGame(player1, hour, player2) {
   </li>  
   `
 }
-  
+
 // CRIAR CARD DE DATA
 function createCard(date, day, games) {
   return `
@@ -40,14 +40,13 @@ function createCard(date, day, games) {
     </div>
     `
 }
-  
-  // jogos da Costa Rica
-document.querySelector("#cards-costa-rica").innerHTML =
-  createCard("23/11", "quarta", createGame("spain", "17:00", "costa-rica")) +
-  createCard("27/11", "domingo", createGame("japan", "11:00", "costa-rica")) +
-  createCard("01/12", "quinta", createGame("costa-rica", "20:00", "germany"))
-//
 
+// jogos da Costa Rica
+document.querySelector("#cards-costa-rica").innerHTML =
+  createCard("23/11", "quarta", createGame("spain", "13:00", "costa-rica")) +
+  createCard("27/11", "domingo", createGame("japan", "07:00", "costa-rica")) +
+  createCard("01/12", "quinta", createGame("costa-rica", "16:00", "germany"))
+//
 
 // CRIAR GRUPO
 function createGroup(
@@ -118,4 +117,3 @@ document.querySelector("#group-e").innerHTML = createGroup(
   "Costa Rica"
 )
 //
-

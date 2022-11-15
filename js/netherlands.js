@@ -17,7 +17,7 @@ document.querySelector("#menu-options").innerHTML =
   createMenu("ri-table-line", "Grupos", "grupos") +
   createMenu("ri-calendar-event-line", "Calendário", "calendario")
 
-// CRIAR JOGO 
+// CRIAR JOGO
 function createGame(player1, hour, player2) {
   return `
   <li data-aos="zoom-in">
@@ -27,7 +27,7 @@ function createGame(player1, hour, player2) {
   </li>  
   `
 }
-  
+
 //CRIAR CARD DE DATA
 function createCard(date, day, games) {
   return `
@@ -39,12 +39,16 @@ function createCard(date, day, games) {
     </div>
     `
 }
-  
+
 // jogos da holanda
 document.querySelector("#cards-netherlands").innerHTML =
-  createCard("21/11", "segunda", createGame("senegal", "17:00", "netherlands")) +
-  createCard("25/11", "sexta", createGame("netherlands", "17:00", "ecuador")) +
-  createCard("29/11", "terça", createGame("netherlands", "16:00", "qatar"))
+  createCard(
+    "21/11",
+    "segunda",
+    createGame("senegal", "13:00", "netherlands")
+  ) +
+  createCard("25/11", "sexta", createGame("netherlands", "13:00", "ecuador")) +
+  createCard("29/11", "terça", createGame("netherlands", "12:00", "qatar"))
 //
 
 // CRIAR GRUPO
@@ -115,4 +119,3 @@ document.querySelector("#group-a").innerHTML = createGroup(
   "netherlands",
   "Holanda"
 )
-

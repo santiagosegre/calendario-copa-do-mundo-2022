@@ -40,14 +40,18 @@ function createCard(date, day, games) {
     </div>
     `
 }
-  
-  //jogos do senegal
-  document.querySelector("#cards-senegal").innerHTML =
-    createCard("21/11", "segunda", createGame("senegal", "17:00", "netherlands")) +
-    createCard("25/11", "sexta", createGame("qatar", "14:00", "senegal")) +
-    createCard("29/11", "terça", createGame("ecuador", "16:00", "senegal"))
-  //
-  
+
+//jogos do senegal
+document.querySelector("#cards-senegal").innerHTML =
+  createCard(
+    "21/11",
+    "segunda",
+    createGame("senegal", "13:00", "netherlands")
+  ) +
+  createCard("25/11", "sexta", createGame("qatar", "10:00", "senegal")) +
+  createCard("29/11", "terça", createGame("ecuador", "12:00", "senegal"))
+//
+
 // CRIAR GRUPO
 function createGroup(
   group,

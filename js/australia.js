@@ -28,7 +28,7 @@ function createGame(player1, hour, player2) {
   </li>  
   `
 }
-  
+
 // CRIAR CARD DE DATA
 function createCard(date, day, games) {
   return `
@@ -40,14 +40,13 @@ function createCard(date, day, games) {
     </div>
     `
 }
-  
-  // jogos da Austrália
-document.querySelector("#cards-australia").innerHTML =
-  createCard("22/11", "terça", createGame("france", "20:00", "australia")) +
-  createCard("26/11", "sábado", createGame("tunisia", "11:00", "australia")) +
-  createCard("30/11", "quarta", createGame("australia", "16:00", "denmark"))
-//
 
+// jogos da Austrália
+document.querySelector("#cards-australia").innerHTML =
+  createCard("22/11", "terça", createGame("france", "16:00", "australia")) +
+  createCard("26/11", "sábado", createGame("tunisia", "07:00", "australia")) +
+  createCard("30/11", "quarta", createGame("australia", "12:00", "denmark"))
+//
 
 // CRIAR GRUPO
 function createGroup(
@@ -118,4 +117,3 @@ document.querySelector("#group-d").innerHTML = createGroup(
   "Austrália"
 )
 //
-
