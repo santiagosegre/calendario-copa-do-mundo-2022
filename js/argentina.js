@@ -18,15 +18,24 @@ document.querySelector("#menu-options").innerHTML =
   createMenu("ri-calendar-event-line", "Calendário", "calendario")
 
 // CRIAR JOGO
-
-function createGame(player1, hour, player2) {
+function createGame(estadio, hour, player1, placar1, placar2, player2) {
   return `
-  <li data-aos="zoom-in">
-    <a href="${player1}.html"><img src="../assets/teams/icon-${player1}.svg" alt="flag ${player1}"> </a>
-    <strong>${hour}</strong>
+<li data-aos="zoom-in">
+  <div class="info-game">
+  <i class="ri-map-pin-line"></i>
+  <span>${estadio}</span>
+  <i class="ri-time-line"></i> 
+  <span>${hour}</span>
+  </div>
+  <div class="placar">
+    <a href="${player1}.html"><img src="../assets/teams/icon-${player1}.svg" alt="flag ${player1}"></a>
+    <strong class="placar1">${placar1}</strong>
+    <span>X</span>
+    <strong class="placar2">${placar2}</strong>
     <a href="${player2}.html"><img src="../assets/teams/icon-${player2}.svg" alt="flag ${player2}"></a>
-  </li>  
-  `
+  </div>
+</li>  
+`
 }
 
 // CRIAR CARD DE DATA
@@ -46,10 +55,18 @@ document.querySelector("#cards-argentina").innerHTML =
   createCard(
     "22/11",
     "terça",
-    createGame("argentina", "07:00", "saudi-arabia")
+    createGame("LUSAIL", "07:00", "argentina", "", "", "saudi-arabia")
   ) +
-  createCard("26/11", "sábado", createGame("argentina", "16:00", "mexico")) +
-  createCard("30/11", "quarta", createGame("poland", "16:00", "argentina"))
+  createCard(
+    "26/11",
+    "sábado",
+    createGame("LUSAIL", "16:00", "argentina", "", "", "mexico")
+  ) +
+  createCard(
+    "30/11",
+    "quarta",
+    createGame("ESTÁDIO 974", "16:00", "poland", "", "", "argentina")
+  )
 //
 
 // CRIAR GRUPO

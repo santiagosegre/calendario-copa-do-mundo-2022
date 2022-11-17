@@ -150,6 +150,7 @@ a {
   text-decoration: none;
   color: var(--team-text-color);
   text-transform: uppercase;
+  font-weight: 500;
 }
 
 /* APP - CENTRALIZADO 100% DE ALTURA */
@@ -294,6 +295,7 @@ header {
   color: var(--team-text-color);
   text-transform: uppercase;
   font-size: 1.1rem;
+  font-weight: 500;
   text-shadow: 1px 1px 2px hsla(240, 7%, 79%, 0.792);
 }
 
@@ -373,7 +375,7 @@ header {
   padding: 8px 16px;
   border: 3px solid var(--card-title-border-color);
   border-radius: 12px;
-  margin-bottom: 53px;
+  margin-bottom: 16px;
   color: #F7DD43;
 }
 
@@ -381,6 +383,7 @@ header {
   color: var(--card-text-color);
   text-transform: uppercase;
   font-size: 16px;
+  font-weight: 400;
 }
 
 .card ul {
@@ -389,23 +392,11 @@ header {
   gap: 24px;
 }
 
-.card ul li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .card ul li+li {
-  padding-top: 24px;
-  border-top: 1px solid var(--card-border-in-color);
+  padding-top: 16px;
+  border-top: 2px solid var(--card-border-in-color);
 }
 
-.card ul li strong {
-  font-weight: 100;
-  font-size: 24px;
-  line-height: 125%;
-  color: #E1E1E6;
-}
 
 .card h2:hover,
 .card ul li strong:hover,
@@ -419,6 +410,36 @@ header {
   transition: transform 0.3s;
 }
 
+.info-game {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  color: rgb(206, 206, 206);
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.placar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.placar span {
+  color: rgb(96, 95, 95);
+  font-size: 18px;
+}
+
+.placar strong {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 125%;
+  color: #E1E1E6;
+}
 
 /* FOOTER */
 
