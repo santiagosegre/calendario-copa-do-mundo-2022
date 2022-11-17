@@ -159,6 +159,22 @@ a {
   padding-bottom: 50px;
 }
 
+#navigation-team {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:16px;
+  align-items: center;
+  text-align: center;
+  padding: 16px;
+  background: linear-gradient(149deg, #eac9c9, #7a636b, #676767);
+  border-radius: 0 0 30px 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgb(30, 27, 27);
+  box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.679);
+}
+
 header {
   margin: 32px 0;
   text-align: center;

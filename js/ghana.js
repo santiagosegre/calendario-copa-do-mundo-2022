@@ -1,3 +1,13 @@
+// CRIAR NAVEGAÇÃO TIME
+function crateNav(team, nameTeam) {
+  return `
+  <img src="../assets/teams/icon-${team}.svg" alt="flag ${team}" width="40px" height="40px">
+  <h1>${nameTeam}</h1>
+`
+}
+
+document.querySelector("#navigation-team").innerHTML = crateNav("ghana", "Gana")
+
 // CRIAR MENU DE OPÇÕES
 function createMenu(icon, menu, page) {
   return `
