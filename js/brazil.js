@@ -56,17 +56,17 @@ document.querySelector("#cards-brazil").innerHTML =
   createCard(
     "24/11",
     "quinta",
-    createGame("LUSAIL", "16:00", "brazil", "", "", "serbia")
+    createGame("LUSAIL", "16:00 *", "brazil", "", "", "serbia")
   ) +
   createCard(
     "28/11",
     "segunda",
-    createGame("ESTÁDIO 974", "13:00", "brazil", "", "", "switzerland")
+    createGame("ESTÁDIO 974", "13:00 *", "brazil", "", "", "switzerland")
   ) +
   createCard(
     "02/12",
     "sexta",
-    createGame("LUSAIL", "16:00", "cameroon", "", "", "brazil")
+    createGame("LUSAIL", "16:00 *", "cameroon", "", "", "brazil")
   )
 //
 

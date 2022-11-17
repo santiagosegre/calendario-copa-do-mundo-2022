@@ -123,9 +123,9 @@ body {
   justify-content: center;
   height: 100%;
   width: 100%;
-  background: linear-gradient(50deg, #590A27, #730D32, #ac2626, #730D32, #BF9075);
+  background: linear-gradient(50deg, #590A27, #730D32, #ac2626, #730D32, #e1504e);
   background-size: 300% 100%;
-  animation: colors 10s ease infinite;
+  animation: colors 7s ease infinite;
 }
 
 @keyframes colors {
