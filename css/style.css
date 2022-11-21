@@ -163,7 +163,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap:16px;
+  gap: 16px;
   align-items: center;
   text-align: center;
   padding: 16px;
@@ -340,6 +340,44 @@ header {
 }
 
 
+/* CLASSIFICAÇÃO */
+
+.classification-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #676767;
+}
+
+.classification-groups {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.classification-groups li {
+  display: flex;
+  gap: 12px;
+  padding-top: 12px;
+  align-items: center;
+}
+
+.classification-groups img {
+  width: 45px;
+  height: 45px;
+}
+
+.classification-points {
+  width: 60%;
+
+}
+
+.classification-menu,
+.classification-team {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* CARDS DE JOGOS */
 
 /* .times {
@@ -360,7 +398,6 @@ header {
   flex-direction: column;
   gap: 32px;
   padding-bottom: 32px;
-
 }
 
 .card {
