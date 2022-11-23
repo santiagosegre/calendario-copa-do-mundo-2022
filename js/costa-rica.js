@@ -69,7 +69,7 @@ document.querySelector("#cards-costa-rica").innerHTML =
   createCard(
     "23/11",
     "quarta",
-    createGame("AL THUMAMA", "13:00 *", "spain", "", "", "costa-rica")
+    createGame("AL THUMAMA", "13:00 *", "spain", "7", "0", "costa-rica")
   ) +
   createCard(
     "27/11",
