@@ -69,7 +69,7 @@ document.querySelector("#cards-switzerland").innerHTML =
   createCard(
     "23/11",
     "quarta",
-    createGame("AL JANOUB", "07:00 *", "switzerland", "", "", "cameroon")
+    createGame("AL JANOUB", "07:00 *", "switzerland", "1", "0", "cameroon")
   ) +
   createCard(
     "28/11",

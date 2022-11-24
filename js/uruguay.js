@@ -73,8 +73,8 @@ document.querySelector("#cards-uruguay").innerHTML =
       "CIDADE DA EDUCAÇÃO",
       "10:00 *",
       "uruguay",
-      "",
-      "",
+      "0",
+      "0",
       "south-korea"
     )
   ) +
