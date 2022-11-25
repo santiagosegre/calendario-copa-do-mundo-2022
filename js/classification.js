@@ -34,45 +34,69 @@ function createGroup(
 ) {
 
   return `
-  <div class="group" data-aos="fade-up">
+  <div class="classification" data-aos="fade-up">
       <h2 data-aos="zoom-in">${group}</h2>
-      <ul>
-        <a href="${player1}.html">
-          <li>
-            <img src="../assets/teams/icon-${player1}.svg" alt="flag ${player1}">
-            <span>
-                ${namePlayer1}
-            </span>
-          </li>
-        </a>
-      
-        <a href="${player2}.html">
-          <li>
-            <img src="../assets/teams/icon-${player2}.svg" alt="flag ${player2}">
-            <span>
-                ${namePlayer2}
-            </span>
-          </li>
-        </a>
+      <div class="pontos">
+        <div>
+          <ul>
+            <a href="${player1}.html">
+              <li>
+                <img src="../assets/teams/icon-${player1}.svg" alt="flag ${player1}">
+                <span>
+                    ${namePlayer1}
+                </span>
+              </li>
+            </a>
+            <a href="${player2}.html">
+              <li>
+                <img src="../assets/teams/icon-${player2}.svg" alt="flag ${player2}">
+                <span>
+                    ${namePlayer2}
+                </span>
+              </li>
+            </a>
         
-        <a href="${player3}.html">
-          <li>
-            <img src="../assets/teams/icon-${player3}.svg" alt="flag ${player3}">
-            <span>
-                ${namePlayer3}
-            </span>
-          </li>
-        </a>
-      
-        <a href="${player4}.html">
-          <li>
-            <img src="../assets/teams/icon-${player4}.svg" alt="flag ${player4}">
-            <span>
-                ${namePlayer4}
-            </span>
-          </li>
-        </a>
-      </ul>
+            <a href="${player3}.html">
+              <li>
+                <img src="../assets/teams/icon-${player3}.svg" alt="flag ${player3}">
+                <span>
+                    ${namePlayer3}
+                </span>
+              </li>
+            </a>
+        
+            <a href="${player4}.html">
+              <li>
+                <img src="../assets/teams/icon-${player4}.svg" alt="flag ${player4}">
+                <span>
+                    ${namePlayer4}
+                </span>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <div class="pontos2">
+          <ul>
+            
+            <li>
+              <img src="../assets/teams/icon-${player1}.svg" alt="flag ${player1}">
+            </li>
+        
+            <li>
+              <img src="../assets/teams/icon-${player2}.svg" alt="flag ${player2}">
+            </li>
+
+            <li>
+              <img src="../assets/teams/icon-${player3}.svg" alt="flag ${player3}">
+            </li>
+            
+            <li>
+              <img src="../assets/teams/icon-${player4}.svg" alt="flag ${player4}">
+            </li>
+          </ul>
+        </div>
+        </div>
+      </div>
   </div>
   `
 }
@@ -80,7 +104,7 @@ function createGroup(
 // player1 = Nome da Seleção para buscar a imagem SVG
 // namePlayes = Nome da Selação que vai aparecer no span
 
-document.querySelector("#groups").innerHTML =
+document.querySelector("#classifications").innerHTML =
   createGroup(
     "Grupo a",
     "qatar",

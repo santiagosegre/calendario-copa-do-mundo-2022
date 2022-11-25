@@ -115,11 +115,11 @@ document.querySelector("#cards").innerHTML =
         "INTERNACIONAL KHALIFA",
         "13:00 *",
         "netherlands",
-        "",
-        "",
+        "1",
+        "1",
         "ecuador"
       ) +
-      createGame("AL BAYT ", "16:00 *", "england", "", "", "united-states")
+      createGame("AL BAYT ", "16:00 *", "england", "0", "0", "united-states")
   ) +
   createCard(
     "26/11",

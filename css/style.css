@@ -266,7 +266,8 @@ header {
 
 /* GRUPOS */
 
-#groups {
+#groups,
+#classifications {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -274,7 +275,8 @@ header {
   gap: 32px;
 }
 
-.group {
+.group,
+.classification {
   padding: 32px 23px;
   text-align: center;
   width: 300px;
@@ -284,12 +286,19 @@ header {
   box-shadow: var(--shadow-colors);
 }
 
-.group img {
+.classification {
+  width: 320px;
+
+}
+
+.group img,
+.classification img {
   width: 45px;
   height: 45px;
 }
 
-.group h2 {
+.group h2,
+.classification h2 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -307,7 +316,8 @@ header {
   box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.725);
 }
 
-.group span {
+.group span,
+.classification span {
   color: var(--team-text-color);
   text-transform: uppercase;
   font-size: 1.1rem;
@@ -315,14 +325,16 @@ header {
   text-shadow: 1px 1px 2px hsla(240, 7%, 79%, 0.792);
 }
 
-.group ul {
+.group ul,
+.classification ul {
   display: flex;
   flex-direction: column;
   gap: 24px;
   width: 270px;
 }
 
-.group ul li {
+.group ul li,
+.classification ul li {
   display: flex;
   align-items: center;
   justify-content: left;
@@ -339,6 +351,13 @@ header {
   transition: transform 0.5s;
 }
 
+.pontos {
+  display: flex;
+}
+
+.pontos2 {
+  margin-left: -40px;
+}
 
 /* CLASSIFICAÇÃO */
 
@@ -619,7 +638,8 @@ header {
     width: 220px;
   }
 
-  #groups {
+  #groups,
+  #classifications {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

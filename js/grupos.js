@@ -1,3 +1,13 @@
+// CRIAR NAVEGAÇÃO TIME
+function crateNav(nameTeam) {
+  return `
+  <h1>${nameTeam}</h1>
+`
+}
+
+document.querySelector("#navigation-team").innerHTML = crateNav("Grupos")
+
+
 function createMenu(icon, menu, page) {
   return `
 <ul>
@@ -12,14 +22,8 @@ function createMenu(icon, menu, page) {
 }
 
 document.querySelector("#menu-options").innerHTML =
-  createMenu(
-    "ri-home-5-line",
-    "Início", 
-    "../index") +
-  createMenu(
-    "ri-calendar-event-line", 
-    "Calendário", 
-    "calendario")
+  createMenu("ri-home-5-line", "Início", "../index") +
+  createMenu("ri-calendar-event-line", "Calendário", "calendario")
 
 function createGroup(
   group,
@@ -32,7 +36,6 @@ function createGroup(
   player4,
   namePlayer4
 ) {
-
   return `
   <div class="group" data-aos="fade-up">
       <h2 data-aos="zoom-in">${group}</h2>

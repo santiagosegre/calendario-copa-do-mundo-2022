@@ -77,8 +77,8 @@ document.querySelector("#cards-ecuador").innerHTML =
       "INTERNACIONAL KHALIFA",
       "13:00 *",
       "netherlands",
-      "",
-      "",
+      "1",
+      "1",
       "ecuador"
     )
   ) +
