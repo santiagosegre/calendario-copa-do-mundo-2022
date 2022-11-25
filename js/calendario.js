@@ -104,13 +104,13 @@ document.querySelector("#cards").innerHTML =
         "south-korea"
       ) +
       createGame("ESTÁDIO 974", "13:00 *", "portugal", "3", "2", "ghana") +
-      createGame("LUSAIL", "16:00 *", "brazil", "", "", "serbia")
+      createGame("LUSAIL", "16:00 *", "brazil", "2", "0", "serbia")
   ) +
   createCard(
     "25/11",
     "sexta",
-    createGame("AHMAD BIN ALI", "07:00 *", "wales", "", "", "iran") +
-      createGame("AL THUMAMA", "10:00 *", "qatar", "", "", "senegal") +
+    createGame("AHMAD BIN ALI", "07:00 *", "wales", "0", "2", "iran") +
+      createGame("AL THUMAMA", "10:00 *", "qatar", "1", "3", "senegal") +
       createGame(
         "INTERNACIONAL KHALIFA",
         "13:00 *",
