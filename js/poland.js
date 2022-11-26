@@ -78,8 +78,8 @@ document.querySelector("#cards-poland").innerHTML =
       "CIDADE DA EDUCAÇÃO",
       "10:00 *",
       "poland",
-      "",
-      "",
+      "2",
+      "0",
       "saudi-arabia"
     )
   ) +
