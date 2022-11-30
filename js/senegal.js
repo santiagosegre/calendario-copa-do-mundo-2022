@@ -79,7 +79,7 @@ document.querySelector("#cards-senegal").innerHTML =
   createCard(
     "29/11",
     "terça",
-    createGame("INTERNACIONAL KHALIFA", "12:00 *", "ecuador", "", "", "senegal")
+    createGame("INTERNACIONAL KHALIFA", "12:00 *", "ecuador", "1", "2", "senegal")
   )
 //
 

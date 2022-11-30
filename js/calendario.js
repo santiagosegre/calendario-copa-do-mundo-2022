@@ -164,22 +164,22 @@ document.querySelector("#cards").innerHTML =
         "ghana"
       ) +
       createGame("ESTÁDIO 974", "13:00 *", "brazil", "1", "0", "switzerland") +
-      createGame("LUSAIL", "16:00 *", "portugal", "", "", "uruguay")
+      createGame("LUSAIL", "16:00 *", "portugal", "2", "0", "uruguay")
   ) +
   createCard(
     "29/11",
     "terça",
-    createGame("AL BAYT", "12:00 *", "netherlands", "", "", "qatar") +
+    createGame("AL BAYT", "12:00 *", "netherlands", "2", "0", "qatar") +
       createGame(
         "INTERNACIONAL KHALIFA",
         "12:00 *",
         "ecuador",
-        "",
-        "",
+        "1",
+        "2",
         "senegal"
       ) +
-      createGame("AHMAD BIN ALI", "16:00 *", "wales", "", "", "england") +
-      createGame("AL THUMAMA", "16:00 *", "iran", "", "", "united-states")
+      createGame("AHMAD BIN ALI", "16:00 *", "wales", "0", "3", "england") +
+      createGame("AL THUMAMA", "16:00 *", "iran", "0", "1", "united-states")
   ) +
   createCard(
     "30/11",
