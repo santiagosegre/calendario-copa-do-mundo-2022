@@ -83,8 +83,8 @@ document.querySelector("#cards-portugal").innerHTML =
       "CIDADE DA EDUCAÇÃO",
       "12:00 *",
       "south-korea",
-      "",
-      "",
+      "2",
+      "1",
       "portugal"
     )
   )

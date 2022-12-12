@@ -192,30 +192,30 @@ document.querySelector("#cards").innerHTML =
   createCard(
     "01/12",
     "quinta",
-    createGame("AHMAD BIN ALI", "12:00 *", "croatia", "", "", "belgium") +
-      createGame("AL THUMAMA ", "12:00 *", "canada", "", "", "morocco") +
+    createGame("AHMAD BIN ALI", "12:00 *", "croatia", "0", "0", "belgium") +
+      createGame("AL THUMAMA ", "12:00 *", "canada", "1", "2", "morocco") +
       createGame(
         "INTERNACIONAL KHALIFA ",
         "16:00 *",
         "japan",
-        "",
-        "",
+        "2",
+        "0",
         "spain"
       ) +
-      createGame("AL BAYT", "16:00 *", "costa-rica", "", "", "germany")
+      createGame("AL BAYT", "16:00 *", "costa-rica", "2", "4", "germany")
   ) +
   createCard(
     "02/12",
     "sexta",
-    createGame("AL JANOUB", "12:00 *", "ghana", "", "", "uruguay") +
+    createGame("AL JANOUB", "12:00 *", "ghana", "0", "2", "uruguay") +
       createGame(
         "CIDADE DA EDUCAÇÃO",
         "12:00 *",
         "south-korea",
-        "",
-        "",
+        "2",
+        "1",
         "portugal"
       ) +
-      createGame("ESTÁDIO 974", "16:00 *", "serbia", "", "", "switzerland") +
-      createGame("LUSAIL", "16:00 *", "cameroon", "", "", "brazil")
+      createGame("ESTÁDIO 974", "16:00 *", "serbia", "2", "3", "switzerland") +
+      createGame("LUSAIL", "16:00 *", "cameroon", "1", "0", "brazil")
   )
