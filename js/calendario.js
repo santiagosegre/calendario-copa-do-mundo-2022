@@ -518,30 +518,6 @@ document.querySelector("#cards").innerHTML =
       )
   ) +
   createCard(
-    "03/12",
-    "sábado",
-    createGame(
-      "INTERNACIONAL KHALIFA",
-      "12:00 *",
-      "netherlands",
-      "3",
-      "",
-      "",
-      "1",
-      "united-states"
-    ) +
-      createGame(
-        "AHMAD BIN ALI",
-        "16:00 *",
-        "argentina",
-        "2",
-        "",
-        "",
-        "1",
-        "australia"
-      )
-  ) +
-  createCard(
     "04/12",
     "domingo",
     createGame("AL THUMAMA", "12:00 *", "france", "3", "", "", "1", "poland") +
