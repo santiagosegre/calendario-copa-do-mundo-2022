@@ -200,7 +200,7 @@ document.querySelector("#cards").innerHTML =
   createCard(
     "14/12",
     "quarta",
-    createGame("AL BAYT", "16:00 *", "france", "", "", "", "", "morocco")
+    createGame("AL BAYT", "16:00 *", "france", "2", "", "", "0", "morocco")
   ) +
   creatSpace("DISPUTA DO 3º LUGAR") +
   createCard(
@@ -214,12 +214,12 @@ document.querySelector("#cards").innerHTML =
       "",
       "",
       "",
-      "definir"
+      "morocco"
     )
   ) +
   creatSpace("FINAL") +
   createCard(
     "18/12",
     "domingo",
-    createGame("LUSAIL", "12:00 *", "argentina", "", "", "", "", "definir")
+    createGame("LUSAIL", "12:00 *", "argentina", "", "", "", "", "france")
   )
