@@ -22,9 +22,19 @@ function createMenu(icon, menu, page) {
 
 document.querySelector("#menu-options").innerHTML =
   createMenu("ri-home-5-line", "Início", "../index") +
-  createMenu("ri-table-line", "Grupos", "grupos")
+  createMenu("ri-table-line", "Grupos", "grupos") +
+  createMenu("ri-trophy-line", "Fase Final", "fase-final")
 
-function createGame(estadio, hour, player1, placar1,penalty1,penalty2, placar2, player2) {
+function createGame(
+  estadio,
+  hour,
+  player1,
+  placar1,
+  penalty1,
+  penalty2,
+  placar2,
+  player2
+) {
   return `
 <li data-aos="zoom-in">
   <div class="info-game">
@@ -57,9 +67,21 @@ function createCard(date, day, games) {
   `
 }
 
+function creatSpace(fase) {
+  return `
+  <div class="fase">
+    <div class="fase-final1" data-aos="fade-up">
+      <h2>
+        ${fase}
+      </h2>
+    </div>
+  </div>
+  `
+}
+
 //CRIAR JOGOS
 
-document.querySelector("#cards").innerHTML =
+document.querySelector("#cards").innerHTML = creatSpace("Fase de Grupos") +
   createCard(
     "20/11",
     "domingo",
@@ -493,6 +515,7 @@ document.querySelector("#cards").innerHTML =
       ) +
       createGame("LUSAIL", "16:00 *", "cameroon", "1", "", "", "0", "brazil")
   ) +
+  creatSpace("Oitavas de Final") +
   createCard(
     "03/12",
     "sábado",
@@ -562,6 +585,7 @@ document.querySelector("#cards").innerHTML =
         "switzerland"
       )
   ) +
+  creatSpace("Quartas de Final") +
   createCard(
     "09/12",
     "sexta",
@@ -600,6 +624,7 @@ document.querySelector("#cards").innerHTML =
       "portugal"
     ) + createGame("AL BAYT", "16:00 *", "england", "1", "", "", "2", "france")
   ) +
+  creatSpace("SEMIFINAL") +
   createCard(
     "13/12",
     "terça",
@@ -610,13 +635,24 @@ document.querySelector("#cards").innerHTML =
     "quarta",
     createGame("AL BAYT", "16:00 *", "france", "", "", "", "", "morocco")
   ) +
+  creatSpace("DISPUTA DO 3º LUGAR") +
   createCard(
     "17/12",
     "sábado",
-    createGame("INTERNACIONAL KHALIFA", "12:00 *", "croatia", "", "", "", "", "")
-  )+
+    createGame(
+      "INTERNACIONAL KHALIFA",
+      "12:00 *",
+      "croatia",
+      "",
+      "",
+      "",
+      "",
+      "definir"
+    )
+  ) +
+  creatSpace("FINAL") +
   createCard(
     "18/12",
     "domingo",
-    createGame("LUSAIL", "12:00 *", "argentina", "", "", "", "", "")
+    createGame("LUSAIL", "12:00 *", "argentina", "", "", "", "", "definir")
   )

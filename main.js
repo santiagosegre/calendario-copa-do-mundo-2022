@@ -11,17 +11,10 @@ function createMenu(icon, menu, page) {
 `
 }
 
-document.querySelector("#menu-options").innerHTML = 
-createMenu(
-  "ri-table-line",
-  "Grupos",
-  "grupos"
-) +
-createMenu(
-  "ri-calendar-event-line",
-  "Calendário",
-  "calendario"
-)
+document.querySelector("#menu-options").innerHTML =
+  createMenu("ri-table-line", "Grupos", "grupos") +
+  createMenu("ri-calendar-event-line", "Calendário", "calendario") +
+  createMenu("ri-trophy-line", "Fase Final", "fase-final")
 
 function createTeam(team, nameTeam) {
   return `

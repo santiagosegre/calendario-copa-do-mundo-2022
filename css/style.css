@@ -188,7 +188,7 @@ header {
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  padding-bottom: 32px;
+  padding-bottom: 16px;
   gap: 32px;
 }
 
@@ -395,6 +395,30 @@ header {
 .classification-team {
   display: flex;
   justify-content: space-between;
+}
+
+.fase {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.fase-final1 {
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+  padding: 16px;
+  background: linear-gradient(149deg, #a66262, #975f72, #dcbaba);
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgb(43, 40, 40);
+  box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.679);
 }
 
 /* CARDS DE JOGOS */
