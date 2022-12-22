@@ -210,10 +210,10 @@ document.querySelector("#cards").innerHTML =
       "INTERNACIONAL KHALIFA",
       "12:00 *",
       "croatia",
+      "2",
       "",
       "",
-      "",
-      "",
+      "1",
       "morocco"
     )
   ) +
@@ -221,5 +221,5 @@ document.querySelector("#cards").innerHTML =
   createCard(
     "18/12",
     "domingo",
-    createGame("LUSAIL", "12:00 *", "argentina", "", "", "", "", "france")
+    createGame("LUSAIL", "12:00 *", "argentina", "3", "4", "3", "3", "france")
   )
