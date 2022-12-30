@@ -654,5 +654,5 @@ document.querySelector("#cards").innerHTML = creatSpace("Fase de Grupos") +
   createCard(
     "18/12",
     "domingo",
-    createGame("LUSAIL", "12:00 *", "argentina", "3", "4", "3", "3", "france")
+    createGame("LUSAIL", "12:00 *", "argentina", "3", "4", "2", "3", "france")
   )
